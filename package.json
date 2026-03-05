@@ -1,0 +1,21 @@
+{
+  "name": "pi-ffmpeg",
+  "version": "1.0.0",
+  "description": "ffmpeg Swiss Army knife for pi — probe, transcode, trim, concat, GIF, frames, audio extract/mux, thumbnail, compress, speedup/slowdown",
+  "type": "module",
+  "license": "MIT",
+  "author": "artale",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arosstale/pi-ffmpeg"
+  },
+  "keywords": ["pi-package", "ffmpeg", "video", "audio", "transcode", "gif"],
+  "pi": {
+    "extensions": ["./extensions"]
+  },
+  "files": ["extensions/", "README.md"],
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": ">=0.56.0",
+    "@sinclair/typebox": ">=0.34.0"
+  }
+}
