@@ -1,6 +1,6 @@
 {
   "name": "pi-ffmpeg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ffmpeg Swiss Army knife for pi — probe, transcode, trim, concat, GIF, frames, audio extract/mux, thumbnail, compress, speedup/slowdown",
   "type": "module",
   "license": "MIT",

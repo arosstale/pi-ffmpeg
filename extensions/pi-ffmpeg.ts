@@ -237,9 +237,11 @@ function popFlag(a: string[], flag: string): string | undefined {
 export default function (pi: ExtensionAPI) {
 	let ready = false;
 
-	pi.on("session_start", async () => {
+	pi.on("session_start", async (_event, ctx) => {
 		ready = !!which("ffmpeg");
-		pi.setStatus({ icon: ready ? "🎬" : "⚠️", text: ready ? "ffmpeg ready" : "ffmpeg not found" });
+		if (ctx?.ui) {
+			ctx.ui.setStatus("pi-ffmpeg", ready ? "🎬 ffmpeg ready" : "⚠️ ffmpeg not found");
+		}
 	});
 
 	const need = (ctx: any): boolean => {
