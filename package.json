@@ -9,11 +9,52 @@
     "type": "git",
     "url": "https://github.com/arosstale/pi-ffmpeg"
   },
-  "keywords": ["pi-package", "ffmpeg", "video", "audio", "transcode", "gif"],
+  "keywords": [
+    "pi-package",
+    "ffmpeg",
+    "video",
+    "audio",
+    "transcode",
+    "gif"
+  ],
   "pi": {
-    "extensions": ["./extensions"]
+    "extensions": [
+      "./extensions"
+    ],
+    "commands": [
+      "ffprobe",
+      "ffmpeg",
+      "transcode",
+      "trim",
+      "concat",
+      "gif",
+      "frames",
+      "thumbnail",
+      "extractaudio",
+      "addaudio",
+      "compress",
+      "speed",
+      "ffmpeg-help"
+    ],
+    "tools": [
+      "ffmpeg_probe",
+      "ffmpeg_transcode",
+      "ffmpeg_trim",
+      "ffmpeg_concat",
+      "ffmpeg_gif",
+      "ffmpeg_frames",
+      "ffmpeg_thumbnail",
+      "ffmpeg_extract_audio",
+      "ffmpeg_add_audio",
+      "ffmpeg_compress",
+      "ffmpeg_speed",
+      "ffmpeg_raw"
+    ]
   },
-  "files": ["extensions/", "README.md"],
+  "files": [
+    "extensions/",
+    "README.md"
+  ],
   "peerDependencies": {
     "@mariozechner/pi-coding-agent": ">=0.56.0",
     "@sinclair/typebox": ">=0.34.0"
